@@ -18,17 +18,17 @@ body {
     
 }
 
-.illustration {
+.illustration img {
     margin: 0 auto;
     height: 70vh;
     width: 50vw;
     padding-right: 9vh;
     padding: 5vh;
-    padding-left: 0;
-
+    
+    margin-left: 40px;
 }
 
-.text {
+.text-button {
 
     color: white;
     padding-top: 90px;
@@ -36,12 +36,41 @@ body {
 
 }
 
+.reg-button{
+
+    font-family: 'Open Sans', sans-serif;
+    height: 2.5rem;
+    width: 9rem;
+    border-radius: 20px;
+    border: none; 
+    color: purple;
+    position: absolute;
+    top: 350px;
+    box-shadow: 2.5px 2.8px 2.2px rgba(0.50, 0.30, 0.40, 0.90);
+    
+  
+  
+
+}
+
+.reg-button:hover {
+
+    color: white;
+    background-color: pink;
+
+}
+
 .para1 {
     line-height: 20px;
     padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-right: 30px;
+
 
 
 }
+
 .header1 {
     font-family: 'Poppins', sans-serif;
 }
@@ -55,4 +84,78 @@ body {
     margin: 30;
     padding: 40;
     
+}
+
+button {
+
+    width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  
+
+}
+
+.fa-brands, .fa-facebook-f, .fa-brands, .fa-twitter, .fa-brands, .fa-instagram {
+
+    background-color: transparent;
+
+    margin-right: 5px;
+    color: white; 
+    
+
+
+
+}
+
+.fa-brands:hover, .fa-facebook-f:hover, .fa-brands:hover, .fa-twitter:hover, .fa-brands:hover, .fa-instagram:hover {
+
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    
+
+} 
+
+footer {
+
+    position: absolute;
+    right: 200px;
+}
+
+
+@media screen and (max-width: 768px){
+
+    header {
+    
+        display: flex;
+        justify-content: center;
+
+    
+    }
+
+.illustration{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.text-button {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+footer {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+
 }
