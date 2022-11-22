@@ -18,7 +18,11 @@ body {
     
 }
 
-.illustration img {
+.illustration  {
+
+justify-content: center;
+
+    /*
     margin: 0 auto;
     height: 70vh;
     width: 50vw;
@@ -26,6 +30,17 @@ body {
     padding: 5vh;
     
     margin-left: 40px;
+    */
+} 
+
+.illustration img {
+
+    max-width: 150vh;
+    max-height: 210vh;;
+    width: 90vh;
+    margin-top: 20px;
+    margin-left: 40px;
+
 }
 
 .text-button {
@@ -33,6 +48,11 @@ body {
     color: white;
     padding-top: 90px;
     text-align: left;
+    display: flex;
+   flex-direction: column;
+   margin-left: 30px; 
+    
+    
 
 }
 
@@ -44,9 +64,8 @@ body {
     border-radius: 20px;
     border: none; 
     color: purple;
-    position: absolute;
-    top: 350px;
     box-shadow: 2.5px 2.8px 2.2px rgba(0.50, 0.30, 0.40, 0.90);
+    margin-top: 20px;
     
   
   
@@ -66,13 +85,15 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     margin-right: 30px;
-
-
+    white-space: pre;
+    line-height: 20px;
+    font-size: 16px;
 
 }
 
 .header1 {
     font-family: 'Poppins', sans-serif;
+    white-space: pre;
 }
 .container {
     display: flex;
@@ -123,7 +144,7 @@ footer {
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) and (max-width: 1440px){
 
     header {
     
@@ -133,11 +154,37 @@ footer {
     
     }
 
+    .container {
+        flex-direction: column;
+        
+    }
+
+    .header1 {
+
+        margin-top: -50px;
+    }
+
+    body {
+
+        
+        
+    }
+
 .illustration{
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     
+}
+
+.illustration img {
+
+    max-width: 50vh;
+    max-height: 50vh;
+    width: 40vh;
+    height: 30vh;
+    margin-left: 20px;
 }
 
 .text-button {
@@ -145,16 +192,40 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
 
+.para1 {
+
+    font-size: 12px;
+}
+
+.reg-button{
+
+    font-family: 'Open Sans', sans-serif;
+    height: 2.5rem;
+    width: 14rem;
+    border-radius: 20px;
+    border: none; 
+    color: purple;
+    box-shadow: 2.5px 2.8px 2.2px rgba(0.50, 0.30, 0.40, 0.90);
+    margin-top: 20px;
+    
+  
+  
 
 }
+
 
 footer {
 
     display: flex;
     align-items: center;
     flex-direction: row;
-
+    margin-right: -70px;
+    margin-bottom: -20px;
 }
 
 
